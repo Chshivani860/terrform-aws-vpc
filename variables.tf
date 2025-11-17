@@ -39,3 +39,45 @@ variable "private_subnet_tags" {
     type = map
     default = {}
 }
+
+variable "database_subnet_cidrs" {
+    type = list
+}
+
+variable "database_subnet_tags" {
+    type = map
+    default = {}
+}
+
+
+variable "public_rout_table_tags" {
+    type = map
+    default = {}
+}
+
+variable "private_rout_table_tags" {
+    type = map
+    default = {}
+}
+
+variable "database_rout_table_tags" {
+    type = map
+    default = {}
+}
+
+
+variable "eip_tags" {
+    type = map
+    default = {}
+}
+
+
+variable "nat_gateway_tags" {
+    type = map
+    default = {}
+}
+
+variable "is_peering_required" {
+  type = bool
+  default = true
+}
